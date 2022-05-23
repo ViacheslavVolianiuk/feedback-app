@@ -10,6 +10,6 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <App text="dsdasd" />
+    <App />
   </StrictMode>
 );
