@@ -2,17 +2,17 @@ const FeedbackData = [
   {
     id: 1,
     rating: 10,
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate nam sit ipsa, consequatur dolores sint autem totam amet odio commodi ex maiores doloremque explicabo delectus cumque nihil impedit est et.',
+    text: 'React is very cool, can`t wait to learn more about it.',
   },
   {
     id: 2,
     rating: 9,
-    text: ' Aitate nam sit ipsa, consequatur dolores sint autem totam amet odio commodi ex maiores doloremque explicabo delectus cumque ni.',
+    text: 'Finding a job is like taking part in a lottery, the more lottery tickets you buy, the more chances you have to win',
   },
   {
     id: 3,
     rating: 7,
-    text: 'Lmit, amet consectetur adipisicing elit. Cupiditate nam sit ipsa, consequatur dolores sinttam amet odio commodi ex maplicabo delectus cum est et.',
+    text: 'Hello, My name is Slava, I`m a frontend developer and I`m #OpenToWork',
   },
 ];
 export default FeedbackData;
