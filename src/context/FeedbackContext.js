@@ -13,7 +13,7 @@ export const FeedbackProvider = ({ children }) => {
     {
       id: 2,
       text: 'Finding a job is like taking part in a lottery, the more lottery tickets you buy, the more chances you have to win',
-      rating: 10,
+      rating: 9,
     },
     {
       id: 3,
@@ -21,6 +21,11 @@ export const FeedbackProvider = ({ children }) => {
       rating: 10,
     },
   ]);
+
+  const [feedbackEdit, setFeedbackEdit] = useState({
+    item: {},
+    edit: false,
+  });
 
   const addFeedback = (newFeedback) => {
     newFeedback.id = uuidv4();
@@ -30,8 +35,24 @@ export const FeedbackProvider = ({ children }) => {
   const deleteFeedback = (id) => {
     setFeedback(feedback.filter((item) => item.id !== id));
   };
+
+  const editFeedback = (item) => {
+    setFeedbackEdit({
+      item,
+      edit: true,
+    });
+  };
+
   return (
-    <FeedbackContext.Provider value={{ feedback, deleteFeedback, addFeedback }}>
+    <FeedbackContext.Provider
+      value={{
+        feedback,
+        deleteFeedback,
+        addFeedback,
+        editFeedback,
+        feedbackEdit,
+      }}
+    >
       {children}
     </FeedbackContext.Provider>
   );
